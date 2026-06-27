@@ -45,11 +45,10 @@ export default function App() {
     title: "Freelance Video Editor & Colorist",
     location: "51, Malaya Garden, Kodikkalpalayam, Thiruvarur, 610001",
     phone: "+91 94899 49358",
-    email: "lukman078@gmail.com",
+    email: "lukhman076@gmail.com",
     instagram: "@_iamlukhman_",
     instagramUrl: "https://ig.me/m/_iamlukhman_"
   };
-
 
   const skills = [
     { name: "CapCut", level: "Expert", category: "Software", desc: "Advanced mobile & desktop editing, keyframing, and speed ramping.", icon: Film },
@@ -62,7 +61,7 @@ export default function App() {
 
   const education = [
     {
-      institution: "Ramakrishna College of Technology",
+      institution: "K. Ramakrishna College of Technology",
       degree: "Undergraduate Program (1st Year)",
       period: "Present",
       type: "College"
@@ -126,12 +125,8 @@ export default function App() {
       <header className="w-full max-w-7xl mx-auto px-6 pt-6 z-20">
         <div className="glass-panel px-6 py-4 rounded-2xl flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-purple-500/20">
-              LA
-            </div>
             <div>
-              <h1 className="font-bold tracking-wider text-sm text-white">LUKHMAN ALI J</h1>
-              <p className="text-[10px] text-slate-400 uppercase tracking-widest">Portfolio 2026</p>
+              <p className="text-xs text-slate-300 font-bold tracking-widest uppercase">Portfolio 2026</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
