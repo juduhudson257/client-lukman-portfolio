@@ -81,7 +81,8 @@ export default function App() {
       duration: "0:45",
       views: "120K+",
       tags: ["Travel", "Color Graded", "Sound Design"],
-      color: "from-blue-500/20 to-indigo-500/20"
+      color: "from-blue-500/20 to-indigo-500/20",
+      videoUrl: "/LUKHMAN_CLIENT.mp4"
     },
     {
       title: "Streetwear Brand Commercial",
@@ -97,7 +98,8 @@ export default function App() {
       duration: "0:15",
       views: "1.2M+",
       tags: ["Reel", "CapCut", "Trending"],
-      color: "from-amber-500/20 to-orange-500/20"
+      color: "from-amber-500/20 to-orange-500/20",
+      videoUrl: "/LUKHMAN_CLIENT02.mp4"
     },
     {
       title: "Music Video Aesthetic Grade",
@@ -105,7 +107,8 @@ export default function App() {
       duration: "1:00",
       views: "45K+",
       tags: ["Color Grading", "Adobe Basics", "Cinematic"],
-      color: "from-teal-500/20 to-emerald-500/20"
+      color: "from-teal-500/20 to-emerald-500/20",
+      videoUrl: "/LUKHMAN_CLIENT03.mp4"
     }
   ];
 
@@ -366,6 +369,18 @@ export default function App() {
                   >
                     {/* Simulated Video Player Banner */}
                     <div className={`h-36 bg-gradient-to-tr ${project.color} relative flex items-center justify-center transition-all duration-300 overflow-hidden`}>
+                      {project.videoUrl && (
+                        <video
+                          src={project.videoUrl}
+                          className="absolute inset-0 w-full h-full object-cover z-0"
+                          muted
+                          loop
+                          playsInline
+                          autoPlay
+                        />
+                      )}
+                      
+                      
                       {/* Play Button Icon Overlay */}
                       <motion.div 
                         className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white border border-white/20 shadow-lg z-10"
@@ -377,8 +392,6 @@ export default function App() {
                         <Play className="w-5 h-5 fill-white ml-0.5" />
                       </motion.div>
                       
-                      {/* Video Grid Overlay Pattern */}
-                      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30" />
                       <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-md text-[9px] font-bold text-white tracking-widest">
                         {project.duration}
                       </div>
